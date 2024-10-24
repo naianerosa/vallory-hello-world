@@ -259,3 +259,4 @@ class HelloWorldAbciApp(AbciApp[Event]):
         Event.ROUND_TIMEOUT: 30.0,
         Event.RESET_TIMEOUT: 30.0,
     }
+    cross_period_persisted_keys: frozenset[str] = frozenset(["printed_count"])
